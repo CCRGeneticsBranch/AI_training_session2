@@ -84,7 +84,7 @@ For this session, you will be downloading a public repo.
 
 Forking a repo provides you a copy where you can experiment without affecting the main repo. 
 
-In your browser, go to <https://github.com/CCRGeneticsBranch/HowTos/> (replace with course repo!). In the upper right, click on **Fork**. Ensure the new owner is your personal GitHub username and keep the original repo name. Then select **Create fork**.
+In your browser, go to <https://github.com/CCRGeneticsBranch/AI_training_session2>. In the upper right, click on **Fork**. Ensure the new owner is your personal GitHub username and keep the original repo name. Then select **Create fork**.
 
 ### 5b. Open a terminal with the Biowulf login node
 
