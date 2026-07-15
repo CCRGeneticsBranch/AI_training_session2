@@ -120,7 +120,7 @@ When prompted, choose GitHub.com, HTTPS, and Login with a web browser.
 
 ### 5d. Clone your fork to Biowulf
 
-In your browser, navigate to your forked repo (```https://github.com/<username>/HowTos```).
+In your browser, navigate to your forked repo (```https://github.com/<username>/AI_training_session2```).
 
 Click on the green **Code** button. Make sure HTTPS is highlighted, then copy the web URL. 
 
@@ -135,21 +135,22 @@ You now have a local copy of the repository on Biowulf.
 Change directory into the repo. 
 
 ```bash
-cd HowTos
+cd AI_training_session2
 ```
 
 ## Part 6 — Perform the DESeq2 analysis
 
 Back in VS Code, look through the cloned repo using the Explorer panel. It contains:
 
-- A raw counts table. Each row is a gene, and each column is a sample. This table was downsampled from one provided by the Frederick Sequencing and Genomics Core as part of their bulk RNAseq deliverables.
+- An RNAseq counts table from [Ebegboni et al](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE243183). The file was generated with RSEM. Each row is a gene, each column is a sample, and each cell is a read count.  
+- A sample table listing each sample in the counts and its condition.
 - An R script to perform a DESeq2 analysis on the raw counts table.
 
 Review the R script to make sure you understand it, then run it. 
 
 ```bash
 module load R 
-Rscript HowTos/run_deseq2.R
+Rscript AI_training_session2/run_deseq2.R
 ```
 
 Unlike on your local machine, the Biowulf staff have already installed R. You only need to load the software using the ```module load``` statement.
@@ -158,7 +159,7 @@ The script will run, producing many lines of output. After it finishes, you will
 
 ## Part 6 — Create new scripts with Copilot
 
-As in Session 1, you can use Copilot to add new scripts to your repo. In the Copilot chat, ask the agent to write a new R script in the HowTos repo that will create a volcano plot from the DESeq2_results.tsv file. You should still review any proposed commands before running them and review the script line-by-line before running it. Once you are statisfied, you can ask Copilot to run the script.  
+As in Session 1, you can use Copilot to add new scripts to your repo. In the Copilot chat, ask the agent to write a new R script in the AI_training_session2 repo that will create a volcano plot from the DESeq2_results.tsv file. You should still review any proposed commands before running them and review the script line-by-line before running it. Once you are statisfied, you can ask Copilot to run the script.  
 
 ### 6a. Commit your changes
 
@@ -200,7 +201,7 @@ Alternatively, in the interface, type your summary message and select **Commit**
 
 ### 6b. Push your changes to GitHub
 
-You will now push your changes to GitHub. In your login terminal, run
+You will now push your changes to GitHub. In your login terminal, run:
 
 ```bash
 git push

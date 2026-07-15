@@ -1,0 +1,7 @@
+Sample	Group
+sample16_48hr_siNeg_1_S227	siNeg
+sample17_48hr_siNeg_2_S228	siNeg
+sample18_48hr_siNeg_3_S229	siNeg
+sample19_48hr_siFli1_1_S230	siFli1
+sample20_48hr_siFli1_2_S231	siFli1
+sample21_48hr_siFli1_3_S232	siFli1
