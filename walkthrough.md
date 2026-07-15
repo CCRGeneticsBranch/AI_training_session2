@@ -30,21 +30,21 @@ Go to **<https://hpcondemand.nih.gov/>**
 
 Sign in with your PIV card or MFA app. On the left sidebar, you'll see the list of **Interactive Apps, GUIs, and Servers** available on Biowulf. Scroll down to **VSCode** and click it.
 
-![OnDemand dashboard with the app sidebar](01-ondemand-dashboard.png)
+![OnDemand dashboard with the app sidebar](images/01-ondemand-dashboard.png)
 
 This brings up a launch form with requested resources (e.g., time, CPUs, memory). Keep the defaults for this session. Click **Launch**.
 
-![VS Code launch form](02-vscode-app-form.png)
+![VS Code launch form](images/02-vscode-app-form.png)
 
 This launches an interactive Biowulf session. Your session will go into the Slurm queue. It usually takes a few minutes to become available.
 
-![Session queued](03-launch-queued.png)
+![Session queued](images/03-launch-queued.png)
 
 > ⚠️ This job counts against your limit of 2 simultaneous interactive jobs. If you already have multiple `sinteractive` sessions running, close them first or your launch will fail.
 
 When the card turns green and says **Running**, your session is ready. Click **Connect to VS Code**.
 
-![Session ready — Connect to VS Code](04-session-ready.png)
+![Session ready — Connect to VS Code](images/04-session-ready.png)
 
 ## Part 2 — Open your Biowulf data directory
 
@@ -58,7 +58,7 @@ In the search bar at the top, type the path to your data directory (```/data/<yo
 
 Click **OK**. You'll see a popup asking whether you trust the authors of the files in this folder:
 
-![Trust the folder dialog](06-trust-folder.png)
+![Trust the folder dialog](images/06-trust-folder.png)
 
 This is a normal VS Code safety prompt — it's asking because VS Code can execute code from a workspace. Since this is your own directory, it's safe to click **"Yes, I trust the authors"**.
 
@@ -170,13 +170,15 @@ git status
 
 This will print the branch you are on and a list of files that were changed in the repo directory.
 
+Alternatively, in VS Code, you can select the version control panel (flowchart with 3 nodes). This will show all files that were changed since your last commit. 
+
 You can inspect the exact changes with the command:
 
 ```bash
 git diff
 ```
 
-Alternatively, in VS Code, you can select the version control panel (flowchart with 3 nodes). Beside Changes, select **Open Changes** to view changes that were made since your last commit. 
+Alternatively, in VS Code, select the name of a file to view exact changes. 
 
 Stage a file for commit:
 
