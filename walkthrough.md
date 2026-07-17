@@ -97,9 +97,9 @@ In your browser, go to <https://github.com/CCRGeneticsBranch/AI_training_session
 
 Because VS Code is running within an interactive session, you will not be able to push to remote GitHub repos within the interface. Access the Biowulf login node via a separate terminal using these instructions:
 
-Windows: search for the PowerShell app.
+Windows: search for the PowerShell <img src="images/powershell.jpg" alt="PowerShell icon" width="18" style="vertical-align: middle;" /> app.
 
-Mac: look for the Terminal app.
+Mac: look for the Terminal <img src="images/terminal.jpg" alt="Terminal icon" width="18" style="vertical-align: middle;" /> app.
 
 Open these apps, and in the terminal type:
 
