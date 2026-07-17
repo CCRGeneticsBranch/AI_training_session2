@@ -70,6 +70,8 @@ In the bottom right, select the Copilot symbol. Sign in to GitHub following the 
 
 In the Explorer panel, hover over your directory and select **New Folder**. Create a new folder for this analysis. We recommend always creating a separate subdirectory for each project. 
 
+![Create project folder in Explorer](images/create_folder.png)
+
 Open a terminal within VS Code by selecting three lines > Terminal > New Terminal. Change directory into your project subfolder.
 
 ```bash
@@ -86,18 +88,32 @@ Forking a repo provides you a copy where you can experiment without affecting th
 
 In your browser, go to <https://github.com/CCRGeneticsBranch/AI_training_session2>. In the upper right, click on **Fork**. Ensure the new owner is your personal GitHub username and keep the original repo name. Then select **Create fork**.
 
+<p align="center">
+	<img src="images/repo.png" alt="Repository page before forking" width="49%" />
+	<img src="images/fork.jpg" alt="Fork button and create fork flow" width="49%" />
+</p>
+
 ### 5b. Open a terminal with the Biowulf login node
 
 Because VS Code is running within an interactive session, you will not be able to push to remote GitHub repos within the interface. Access the Biowulf login node via a separate terminal using these instructions:
 
-**Windows**: <https://hpc.nih.gov/docs/ssh.html/> (“Connecting from Windows”)
+Windows: search for the PowerShell app.
 
-**Mac**:
+Mac: look for the Terminal app.
+
+Open these apps, and in the terminal type:
+
+```bash
+ssh <your-username>@biowulf.nih.gov
+# eg: ssh gangalapudiv2@biowulf.nih.gov
+```
+
 
 Once there, change directory (cd) to your data directory. 
 
 ```bash
-cd /data/<your-username>/<project subfolder>
+cd /data/<your-username>/<project-subfolder> 
+# eg: cd /data/gangalapudiv2/AI_session2
 ```
 
 You are now "sitting" in the same location in your login node terminal and your VS Code terminal. You can confirm this with a "print working directory" statement:
@@ -108,21 +124,21 @@ pwd
 
 ### 5c. Log on to GitHub via the login node
 
-In your login terminal, log on to GitHub, replacing your name and username in the below code.
+In your login terminal, run:
 
 ```bash
-git config --global user.name "Full Name" 
-git config --global user.email "user@nih.gov" 
-gh auth login  
+gh auth login
 ```
 
-When prompted, choose GitHub.com, HTTPS, and Login with a web browser.
+When prompted, choose GitHub.com, HTTPS, and Login with a web browser for authentication.
 
 ### 5d. Clone your fork to Biowulf
 
 In your browser, navigate to your forked repo (```https://github.com/<username>/AI_training_session2```).
 
 Click on the green **Code** button. Make sure HTTPS is highlighted, then copy the web URL. 
+
+![Copy clone URL from GitHub](images/clone.png)
 
 Within your login terminal, run:
 
@@ -131,6 +147,8 @@ git clone <copied address>
 ```
 
 You now have a local copy of the repository on Biowulf. 
+
+![Terminal commands after cloning](images/commands.jpg)
 
 Change directory into the repo. 
 
