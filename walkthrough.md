@@ -90,7 +90,7 @@ In your browser, go to <https://github.com/CCRGeneticsBranch/AI_training_session
 
 <p align="center">
 	<img src="images/repo.png" alt="Repository page before forking" width="49%" />
-	<img src="images/fork.jpg" alt="Fork button and create fork flow" width="49%" />
+	<img src="images/fork.png" alt="Fork button and create fork flow" width="49%" />
 </p>
 
 ### 5b. Open a terminal with the Biowulf login node
