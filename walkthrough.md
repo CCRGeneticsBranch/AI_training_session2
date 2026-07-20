@@ -113,7 +113,7 @@ Once there, change directory (cd) to your data directory.
 
 ```bash
 cd /data/<your-username>/<project-subfolder> 
-# eg: cd /data/gangalapudiv2/AI_session2
+# eg: cd /data/gangalapudiv2/Project1
 ```
 
 You are now "sitting" in the same location in your login node terminal and your VS Code terminal. You can confirm this with a "print working directory" statement:
@@ -176,7 +176,7 @@ Review the R script to make sure you understand it, then run it.
 
 ```bash
 module load R 
-Rscript AI_training_session2/run_deseq2.R
+Rscript run_deseq2.R
 ```
 
 Unlike on your local machine, the Biowulf staff have already installed R. You only need to load the software using the ```module load``` statement.
