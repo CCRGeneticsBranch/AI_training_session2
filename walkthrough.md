@@ -93,7 +93,11 @@ In your browser, go to <https://github.com/CCRGeneticsBranch/AI_training_session
 	<img src="images/fork.png" alt="Fork button and create fork flow" width="49%" />
 </p>
 
-### 5b. Open a terminal with the Biowulf login node
+### 5b. Generate a personal access token (PAT)
+
+Instead of authenticating with your password, you will generate a PAT for GitHub. Follow [these instructions](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token) to generate a fine-grained PAT. After entering the token name, increase the Expiration to 90 days, keep the remaining default settings, then click **Generate token**. Be sure to copy the token and keep it somewhere safe, as you would a password. 
+
+### 5c. Open a terminal with the Biowulf login node
 
 Because VS Code is running within an interactive session, you will not be able to push to remote GitHub repos within the interface. Access the Biowulf login node via a separate terminal using these instructions:
 
@@ -120,16 +124,6 @@ You are now "sitting" in the same location in your login node terminal and your 
 pwd
 ```
 
-### 5c. Log on to GitHub via the login node
-
-In your login terminal, run:
-
-```bash
-gh auth login
-```
-
-When prompted, choose GitHub.com, HTTPS, and Login with a web browser for authentication.
-
 ### 5d. Clone your fork to Biowulf
 
 In your browser, navigate to your forked repo (```https://github.com/<username>/AI_training_session2```).
@@ -143,6 +137,8 @@ Within your login terminal, run:
 ```bash
 git clone <copied address>
 ```
+
+When prompted, enter your GitHub username and PAT, as in [these instructions](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#using-a-personal-access-token-on-the-command-line).
 
 You now have a local copy of the repository on Biowulf. 
 
