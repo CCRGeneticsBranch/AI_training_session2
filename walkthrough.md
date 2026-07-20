@@ -156,7 +156,7 @@ cd AI_training_session2
 
 ## Part 6 — Perform the DESeq2 analysis
 
-Back in VS Code, change directory into the cloned repo and look through it using the Explorer panel. It contains:
+Back in VS Code, change directory into the cloned repo in your terminal and look through it using the Explorer panel. It contains:
 
 - A sample table listing 6 samples and their conditions.
 - An R script to perform a DESeq2 analysis on a raw counts table.
@@ -180,7 +180,7 @@ Load R. Unlike on your local machine, the Biowulf staff have already installed R
 module load R 
 ```
 
-Review the R script to make sure you understand it. 
+Review the R script to make sure you understand it, then run it. 
 
 ```bash
 Rscript run_deseq2.R
@@ -224,7 +224,7 @@ The interface and ```git status``` will now show the file as staged.
 Now commit your changes. 
 
 ```bash
-git commit -m "<summary of changes>"""
+git commit -m "<summary of changes>"
 ```
 
 Alternatively, in the interface, type your summary message and select **Commit**. 
