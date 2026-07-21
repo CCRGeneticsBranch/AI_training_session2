@@ -97,6 +97,8 @@ In your browser, go to <https://github.com/CCRGeneticsBranch/AI_training_session
 
 Instead of authenticating with your password, you will generate a PAT for GitHub. Follow [these instructions](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token) to generate a fine-grained PAT. Enter the token name, make sure the Resource owner is your personal username, increase the Expiration to 90 days, select "Only select repositories" - your forked repo, and under "Add permissions", select "Contents" - "Access: Read and write", "Metadata", "Workflows" - "Access: Read and write". Click **Generate token**. Be sure to copy the token and keep it somewhere safe, as you would a password. 
 
+![PAT creation](images/pat.png)
+
 ### 5c. Open a terminal with the Biowulf login node
 
 Because VS Code is running within an interactive session, you will not be able to push to remote GitHub repos within the interface. Access the Biowulf login node via a separate terminal using these instructions:
