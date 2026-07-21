@@ -95,7 +95,7 @@ In your browser, go to <https://github.com/CCRGeneticsBranch/AI_training_session
 
 ### 5b. Generate a personal access token (PAT)
 
-Instead of authenticating with your password, you will generate a PAT for GitHub. Follow [these instructions](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token) to generate a fine-grained PAT. After entering the token name, increase the Expiration to 90 days, keep the remaining default settings, then click **Generate token**. Be sure to copy the token and keep it somewhere safe, as you would a password. 
+Instead of authenticating with your password, you will generate a PAT for GitHub. Follow [these instructions](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token) to generate a fine-grained PAT. After entering the token name, increase the Expiration to 90 days, select "All repositories", keep the remaining default settings, then click **Generate token**. Be sure to copy the token and keep it somewhere safe, as you would a password. 
 
 ### 5c. Open a terminal with the Biowulf login node
 
@@ -137,8 +137,6 @@ Within your login terminal, run:
 ```bash
 git clone <copied address>
 ```
-
-When prompted, enter your GitHub username and PAT, as in [these instructions](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#using-a-personal-access-token-on-the-command-line).
 
 You now have a local copy of the repository on Biowulf. 
 
@@ -232,6 +230,8 @@ You will now push your changes to GitHub. In your login terminal, run:
 ```bash
 git push
 ```
+
+When prompted, enter your GitHub username and PAT, as in [these instructions](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#using-a-personal-access-token-on-the-command-line).
 
 You will see a confirmation that your results have been pushed to the remote. 
 
